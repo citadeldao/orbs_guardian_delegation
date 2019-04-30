@@ -32,11 +32,18 @@ $ sudo apt-get install nodejs
 You can change delegation address inside file DelegateConst.js
 ```
 
+After changes run this command to get your website 
+
+```
+npm run compile
+```
+
 ## Contacts
 
 If you need help, please contact us
 
 Telegram: @grshabl
+
 Email: partners@paradigmfund.io
 
 ## License
