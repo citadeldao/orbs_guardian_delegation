@@ -9,6 +9,7 @@ Visit our website to check this template: [orbs.paradigmcitadel.io](http://orbs.
 
 ## Technology
 
+* MetaMask
 * AngularJS 
 * Gulp 
 
