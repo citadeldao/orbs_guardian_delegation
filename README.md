@@ -1,10 +1,4 @@
 # Delegation page for ORBS guardians 
-</br>
-<p align="left">
-  <a href="http://orbs.paradigmcitadel.io">
-    <img src="https://icon.community/media/logos/paradigm.PNG" alt="Paradigm Citadel" width="150" height="150">
-  </a>
-  </br>
 Orbs delegation page template by Paradigm Citadel guardian
 
 ## Description
@@ -47,6 +41,13 @@ npm run compile
 ```
 
 ## Contacts
+
+</br>
+<p align="left">
+  <a href="http://orbs.paradigmcitadel.io">
+    <img src="https://icon.community/media/logos/paradigm.PNG" alt="Paradigm Citadel" width="150" height="150">
+  </a>
+  </br>
 
 If you need help, please contact us
 
