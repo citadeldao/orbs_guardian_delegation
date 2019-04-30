@@ -1,0 +1,138 @@
+.header {
+  padding: 11px 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__menu.is-active {
+  right: 0;
+}
+
+.header__menu-close {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  right: 25px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header__menu-close:before,
+.header__menu-close:after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  background: #42E8E0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.header__menu-close:before {
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  -ms-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+
+.header__menu-close:after {
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+  -ms-transform: rotate(-45deg) translate(-50%, -50%);
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.header__menu-close:hover {
+  opacity: .7;
+}
+
+.header__menu-logo .logo__link {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header__menu-logo .logo__text {
+  width: 100%;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.header__menu-btn,
+.header__menu-close,
+.header__menu-logo {
+  display: none;
+}
+
+.header__lang {
+  margin-left: 80px;
+}
+
+.header--fixed {
+  padding: 9px 0;
+  background: rgba(37, 31, 134, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+  .header__lang {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__menu {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: -100%;
+    background: rgba(25, 57, 225, 0.9);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 70px 25px 25px;
+    height: 100vh;
+    overflow: auto;
+    width: 320px;
+  }
+
+  .header__menu-btn,
+  .header__menu-close,
+  .header__menu-logo {
+    display: block;
+  }
+
+  .header__lang {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

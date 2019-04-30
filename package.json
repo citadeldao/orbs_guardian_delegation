@@ -1,0 +1,32 @@
+{
+    "name": "arhat_front",
+    "version": "1.0.1",
+    "description": "arhat_front",
+    "dependencies": {
+        "angular": "1.6.9",
+        "jquery": "3.4.0",
+        "magnific-popup" : "1.1.0",
+        "wowjs" : "1.1.2",
+        "jquery.maskedinput" : "1.4.1",
+        "angular-ui-router": "1.0.18",
+        "oclazyload": "1.1.0"
+    },
+    "devDependencies": {
+        "gulp": "3.9.1",
+        "gulp-babel": "8.0.0",
+        "gulp-concat": "2.6.1",
+        "gulp-concat-css": "3.1.0",
+        "gulp-cssmin": "0.2.0",
+        "gulp-htmlmin": "4.0.0",
+        "gulp-replace": "1.0.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.0",
+        "node-sass": "4.11.0",
+        "require-dir": "1.0.0"
+    },
+    "scripts": {
+        "compile": "npm update && gulp pdf && gulp js-modules && gulp js-lib && gulp css && gulp img && gulp tpl && gulp fonts"
+    },
+    "author": "",
+    "license": "ISC"
+}

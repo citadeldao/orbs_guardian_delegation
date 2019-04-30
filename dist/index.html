@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="no-js" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="desc">
+
+    <link rel="stylesheet" href="/css/modules/delegate/style.css?version={{ appVersion }}">
+    <link rel="stylesheet" href="/css/common/style.css?version={{ appVersion }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="application/ecmascript"></script>
+    <![endif]-->
+    <script src="/node_modules/jquery/dist/jquery.min.js" type="application/ecmascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" type="application/ecmascript"></script>
+    <title>Index page</title>
+</head>
+<body class="index-page">
+<div class="site">
+    <header class="site__header header"
+            ng-controller="HeaderController"
+            ng-include="'/js/modules/delegate/tpl/common/header.tpl.html'">
+    </header>
+    <div class="site__content">
+        <ui-view></ui-view>
+    </div>
+    <footer class="site__footer footer"  ng-include="'/js/modules/delegate/tpl/common/footer.tpl.html'"></footer>
+</div>
+<script src="/node_modules/angular/angular.min.js"></script>
+<script src="/node_modules/oclazyload/dist/ocLazyLoad.min.js"></script>
+<script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script src="/js/modules/delegate/app.js?version={{ appVersion }}"></script>
+<script src="/js/common/common.js?version={{ appVersion }}"></script>
+
+</body>
+</html>

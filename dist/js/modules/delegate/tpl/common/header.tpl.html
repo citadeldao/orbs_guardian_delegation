@@ -1,0 +1,65 @@
+<div class="alarm" id="alarm">
+    <div class="alarm__content"><img class="alarm__icon alarm__icon-before" src="/img/alarm-before.svg" alt="">
+        <div class="alarm__text">Unable to perform action! To continue please install Metamask application in your
+            browser. You can install the app from this link.
+        </div>
+        <img class="alarm__icon alarm__icon-after" src="/img/alarm-after.svg" alt="">
+    </div>
+</div>
+<div class="container">
+    <div class="header__inner">
+        <div class="header__logo logo">
+            <a class="logo__link" href="/"><img class="logo__img"
+                                                src="/img/logo.svg"
+                                                alt="/img/logo.svg">
+                <div class="logo__text">Paradigm fund</div>
+            </a></div>
+        <div class="header__menu">
+            <div class="header__menu-close js-mob-menu-close-btn"></div>
+            <div class="header__menu-logo logo"><a class="logo__link" href="/"><img class="logo__img"
+                                                                                    src="/img/logo.svg"
+                                                                                    alt="/img/logo.svg">
+                <div class="logo__text">Paradigm fund</div>
+            </a></div>
+            <ul class="menu" id="menu">
+                <li class="menu__item">
+                    <a class="menu__link scrollto link-hover" href="/">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link scrollto link-hover" href="" ui-sref="about">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link scrollto link-hover" href="#delegate">Delegate</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link scrollto link-hover" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__lang">
+            <div class="custom-select custom-select--lang" ng-init="hideLangList = true">
+                <div class="select-selected"
+                     ng-click="hideLangList = !hideLangList"
+                     ng-class="{ 'select-arrow-active' : hideLangList == false }">
+                    {{ selectedLanguages.name }}<img src="{{ selectedLanguages.img }}">
+                    <div class="custom-select__arrow">
+                        <svg class="icon icon-angle-down-solid custom-select__arrow-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="img/sprite/symbol/sprite.svg#angle-down-solid"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="select-items"
+                     ng-click="hideLangList = !hideLangList"
+                     ng-class="{ 'select-hide' : hideLangList == true}">
+                    <div ng-repeat="language in languages"
+                         ng-click="changeLanguage(language)" >
+                        {{ language.name }}<img src="{{ language.img }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu-btn"><a class="mob-menu-btn js-mob-menu-btn"
+                                         href=""><span></span><span></span><span></span></a></div>
+    </div>
+</div>
