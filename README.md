@@ -1,6 +1,6 @@
 # Delegation page for ORBS guardians 
 Orbs delegation page template by Paradigm Citadel guardian
-![Paradigm Citadel](https://icon.community/media/logos/paradigm.PNG){:height="150px" width="150px"}
+![Paradigm Citadel](https://icon.community/media/logos/paradigm.PNG | width=150)
 
 ## Description
 
