@@ -5,8 +5,11 @@ Orbs delegation page template by Paradigm Citadel guardian
 
 Dear Guardians of ORBS, we are happy to share you our website delegation template. Feel free to use our template to make your website really good for your delegators, because we already include Metamask extension and made UI/UX completely fit for delegation purposes. 
 
+Visit our website to check this template: [orbs.paradigmcitadel.io](http://orbs.paradigmcitadel.io)
+
 ## Technology
 
+* MetaMask
 * AngularJS 
 * Gulp 
 
@@ -40,9 +43,16 @@ npm run compile
 
 ## Contacts
 
+</br>
+<p align="left">
+  <a href="http://orbs.paradigmcitadel.io">
+    <img src="https://icon.community/media/logos/paradigm.PNG" alt="Paradigm Citadel" width="150" height="150">
+  </a>
+  </br>
+
 If you need help, please contact us
 
-Telegram: @grshabl
+Telegram: [@grshabl](https://t.me/grshabl)
 
 Email: partners@paradigmfund.io
 
