@@ -1,22 +1,22 @@
-app.controller('HeaderController', ['$scope', '$rootScope', '$web3Service',
-    function ($scope, $rootScope, $web3Service) {
+app.controller('HeaderController', ['$scope', '$rootScope',
+    function ($scope, $rootScope) {
 
         $scope.languages = [
             {
                 name: 'En',
-                img: '/img/flag/united-kingdom.png'
+                img: '/img/flag/united-kingdom.svg'
             },
             {
                 name: 'Ch',
-                img: '/img/flag/china.png'
+                img: '/img/flag/china.svg'
             },
             {
                 name: 'Ru',
-                img: '/img/flag/russia.png'
+                img: '/img/flag/russia.svg'
             },
             {
                 name: 'Sk',
-                img: '/img/flag/south-korea.png'
+                img: '/img/flag/south-korea.svg'
             }
         ];
         $scope.selectedLanguages = $scope.languages[0];
@@ -25,26 +25,14 @@ app.controller('HeaderController', ['$scope', '$rootScope', '$web3Service',
         }
 
         $rootScope.$on('$viewContentLoaded', function (event, view) {
-
-            if (!$web3Service.checkEnableWallet()) {
-                $('#alarm').toggleClass('is-active');
-            }
-            if ($web3Service.checkEnableWallet()) {
-                $web3Service.getAccounts().then(function (accounts) {
-                    if (!accounts) {
-                        $('#alarm').toggleClass('is-active');
-                        $web3Service.enableAuth();
-                    }
-                });
-            }
             $(window).on('scroll', function () {
-                if ($(window).scrollTop() > 200) {
+                if ($(window).scrollTop() > 20) {
                     $('.header').addClass('header--fixed');
                 } else {
                     $('.header').removeClass('header--fixed');
                 }
             });
-            if ($(window).scrollTop() > 200) {
+            if ($(window).scrollTop() > 20) {
                 $('.header').addClass('header--fixed');
             } else {
                 $('.header').removeClass('header--fixed');

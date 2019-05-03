@@ -391,6 +391,7 @@ hr {
   width: 40px;
   height: 40px;
   position: relative;
+  top: -1px;
 }
 
 .mob-menu-btn span {
@@ -607,7 +608,6 @@ a.btn--transparent {
 .custom-select--lang .select-items {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 5px 5px;
-  padding-bottom: 4px;
 }
 
 .custom-select--lang .select-items div,
@@ -623,7 +623,7 @@ a.btn--transparent {
 .custom-select--lang .select-items div img,
 .custom-select--lang .select-selected img {
   position: absolute;
-  top: 1px;
+  top: -1px;
   left: 12px;
 }
 
@@ -1215,6 +1215,10 @@ a.btn--transparent {
   .section-top .bg-2 {
     width: 551px;
     height: 505px;
+  }
+
+  .delegate-form .btn {
+    padding: 1.7rem;
   }
 
   .section-contact .bg-1 {

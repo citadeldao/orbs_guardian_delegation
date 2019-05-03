@@ -25,12 +25,18 @@ app.controller('DelegateController', ['$scope', '$web3Service', '$delegateServic
             $scope.methodsHideList = !$scope.methodsHideList;
         }
         $scope.delegate = function (candidate) {
+
             if ($scope.selectedMethods.id == 1) {
+                $('#alarm').addClass('is-active');
                 if ($web3Service.checkEnableWallet()) {
-                    $delegateService.delegate(candidate);
+                    $web3Service.enableAuth().then(function () {
+                        $('#alarm').removeClass('is-active');
+                        $delegateService.delegate(candidate);
+                    });
                 }
-                return;
+                return
             }
+
             $.magnificPopup.open({
                 type: 'inline',
                 items: {
@@ -67,9 +73,10 @@ app.controller('DelegateController', ['$scope', '$web3Service', '$delegateServic
                 copyToClipboard(el);
             });
 
-            $("body").on("click", ".mfp-close", function() {
+            $("body").on("click", ".mfp-close", function () {
                 $.magnificPopup.close()
             });
         });
     }
-]);
+])
+;
