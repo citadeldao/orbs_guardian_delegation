@@ -3,7 +3,7 @@
     "version": "1.0.1",
     "description": "arhat_front",
     "dependencies": {
-        "angular": "1.6.9",
+        "angular": "1.8.0",
         "jquery": "3.4.0",
         "magnific-popup" : "1.1.0",
         "wowjs" : "1.1.2",
