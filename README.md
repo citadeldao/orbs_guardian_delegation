@@ -47,7 +47,7 @@ If you need help, please contact us
 
 Telegram: [@grshabl](https://t.me/grshabl)
 
-Email: partners@paradigmfund.io
+Email: support@citadel.one
 
 ## License
 
