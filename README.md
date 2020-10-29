@@ -5,8 +5,6 @@ Orbs delegation page template by Citadel guardian
 
 Dear Guardians of ORBS, we are happy to share you our website delegation template. Feel free to use our template to make your website really good for your delegators, because we already include Metamask extension and made UI/UX completely fit for delegation purposes. 
 
-Visit our website to check this template: [orbs.paradigmcitadel.io](http://orbs.paradigmcitadel.io)
-
 ## Technology
 
 * MetaMask
