@@ -21,7 +21,7 @@
         "gulp-replace": "1.0.0",
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.0",
-        "node-sass": "4.11.0",
+        "node-sass": "7.0.0",
         "require-dir": "1.0.0"
     },
     "scripts": {
